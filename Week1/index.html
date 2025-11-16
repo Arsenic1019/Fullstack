@@ -3,24 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yamari Recipe</title>
+    <title>Yomari Recipe</title>
+
+    <!-- Internal CSS: reset and base styles -->
+    <style>
+        /* Universal selector for reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Base styles for body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5e6;
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        /* Navigation base styles */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            background-color: #ff6347;
+            padding: 10px 0;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>Yamari Recipe</h1>
+    <!-- Inline CSS for header typography and background -->
+    <header style="background: linear-gradient(90deg, #ff7f50, #ff6347); color:white; text-align:center; padding:40px 20px; font-family:'Georgia', serif;">
+        <h1>Yomari Recipe</h1>
     </header>
 
     <nav>
-        <ul>
+        <ul id="nav-menu">
             <li><a href="#ingredients">Ingredients</a></li>
             <li><a href="#instructions">Instructions</a></li>
         </ul>
     </nav>
 
     <main>
-        <article>
-            <section id="ingredients">
+        <!-- Container for side-by-side sections -->
+        <div class="container">
+            <section id="ingredients" class="card">
                 <h2>Ingredients</h2>
                 <ul>
                     <li>Rice flour - 2 cups</li>
@@ -30,7 +78,7 @@
                 </ul>
             </section>
 
-            <section id="instructions">
+            <section id="instructions" class="card">
                 <h2>Instructions</h2>
                 <ol>
                     <li>Mix rice flour with water to make dough.</li>
@@ -39,12 +87,8 @@
                     <li>Steam for 20 minutes.</li>
                 </ol>
             </section>
-        </article>
+        </div>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Yamari Recipes</p>
-    </footer>
-
-</body>
-</html>
+    <footer class="footer">
+        <p>&copy; 2025 Yomari Recipes</p>
