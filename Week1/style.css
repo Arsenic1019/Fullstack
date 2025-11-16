@@ -1,0 +1,113 @@
+/* Universal selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Body styling */
+body {
+    background-color: #fff5e6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    background: linear-gradient(90deg, #ff7f50, #ff6347);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: 'Georgia', serif;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Navigation styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    background-color: #ff6347;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* Container for Ingredients & Instructions */
+.container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* stack on mobile */
+    margin-top: 20px;
+}
+
+/* Individual cards */
+.card {
+    background: linear-gradient(180deg, #fff8dc, #ffe4b5);
+    border: 2px solid #ff7f50;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1 1 300px;
+    max-width: 400px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 4px 8px 20px rgba(0,0,0,0.2);
+    background: linear-gradient(180deg, #ffe4b5, #fff8dc);
+}
+
+/* Headings */
+h2 {
+    color: #ff6347;
+    margin-bottom: 10px;
+}
+
+/* Lists styling */
+ul li {
+    list-style-type: square;
+    margin: 5px 0;
+}
+
+ol li {
+    margin: 5px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #ff7f50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 90%;
+    }
+}
