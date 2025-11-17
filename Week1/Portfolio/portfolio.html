@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subham Portfolio</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="design.css">
+
+    <!-- Internal CSS -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            line-height: 1.6;
+        }
+        header, nav, section, footer {
+            padding: 20px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #333;
+        }
+        nav a:hover {
+            color: #0077cc;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .img {
+            border-radius: 50%;
+        }
+        footer {
+            text-align: center;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Subham Achhami</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#short_bio">Short Bio</a></li>
+                <li><a href="#aboutMe">About</a></li>
+                <li><a href="#education_history">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#interests_hobbies">Interests</li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <!-- SHORT BIO -->
+    <section id="short_bio" class="section">
+        <h2>Short Bio</h2>
+        <p><b>Subham Achhami</b></p>
+        <p>Hi! I am Subham. Welcome to my portfolio website.</p>
+        <p>This page shows details about me and my interests.</p>
+        <img src="images/IMG_2760.JPG" width="200" class="img" alt="Subham Achhami">
+    </section>
+
+    <!-- ABOUT -->
+    <section id="aboutMe" class="section">
+        <h2>About Me</h2>
+        <p>
+            I'm Subham Achhami from New Baneshwor, Kathmandu. 
+            I study BSc (Hons) Computer Science at Herald College Kathmandu. 
+            My hobbies include singing, playing guitar, exploring nature, and resting.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education_history" class="section">
+        <h2>Education History</h2>
+        <ul>
+            <li>BSc (Hons) Computer Science - Herald College, University of Wolverhampton (Level 5)</li>
+            <li>+2 - VS Niketan College, NEB (A+)</li>
+            <li>SEE - N.K. Singh Memorial EPS School, NEB (A)</li>
+        </ul>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project-box">
+            <img src="C:\Users\dell\OneDrive\Documents\Fullstack\Week1\Portfolio\Images\Screenshot (5).png" width="400" alt="Project Screenshot">
+            <p>This is my first HTML & CSS project created during my learning process.</p>
+        </div>
+    </section>
+
+    <!-- INTERESTS & HOBBIES -->
+    <section id="interests_hobbies" class="section">
+        <h2>Interests</h2>
+        <div class="container">
+            <div class="int">
+                <i class="fa-solid fa-music"></i>
+                <b>Music</b>
+                <p>I enjoy 80s & 90s English songs.</p>
+            </div>
+            <div class="int">
+                <i class="fa-solid fa-compass"></i>
+                <b>Travelling</b>
+                <p>I love exploring nature and culture.</p>
+            </div>
+            <div class="int">
+                <i class="fa-solid fa-pen-nib"></i>
+                <b>Graphic Design</b>
+                <p>I enjoy making logos and visuals.</p>
+            </div>
+        </div>
+
+        <h2>Hobbies</h2>
+        <div class="container">
+            <div class="int">
+                <i class="fa-solid fa-guitar"></i>
+                <b>Singing / Guitar</b>
+                <p>I sing and play rhythm guitar.</p>
+            </div>
+            <div class="int">
+                <i class="fa-solid fa-futbol"></i>
+                <b>Football</b>
+                <p>I play midfield or forward.</p>
+            </div>
+            <div class="int">
+                <i class="fa-solid fa-tree"></i>
+                <b>Exploring Nature</b>
+                <p>I find peace in natural places.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message"></textarea>
+
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>© 2024 Subham Achhami</p>
+        <div>
+           <a href="https://www.facebook.com/profile.php?id=100077284218765" target="_blank"> <i class="fa-brands fa-facebook"></i></a> 
+        <a href="https://www.instagram.com/arsenic.101/" target="_blank"> <i class="fa-brands fa-instagram"></i> </a>
+        <a href="https://www.linkedin.com/in/subham-achhami-376aa1340/" target="_blank"> <i class="fa-brands fa-linkedin"></i></a>
+</div>
+        </div>
+    </footer>
+
+</body>
+</html>
